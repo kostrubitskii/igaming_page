@@ -1,0 +1,71 @@
+@import '../utils/mixins.scss';
+@import '../utils/variables.scss';
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60rem;
+  background-color: black;
+  padding-inline: 16rem;
+
+  @include on-desktop {
+    padding-inline: 32rem;
+    gap: 48rem;
+  }
+
+  &__title {
+    color: white;
+    font-size: 16rem;
+
+    @include on-desktop {
+      font-size: 32rem;
+    }
+  }
+
+  @include on-desktop {
+    height: 100rem;
+  }
+}
+
+.topBar {
+  display: flex;
+  gap: 24rem;
+  align-items: center;
+
+  &__buttons {
+    padding: 8rem;
+    text-align: center;
+    color: white;
+    background-color: $bluecolor;
+    border-radius: 12rem;
+    font-size: 12rem;
+    font-weight: normal;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+
+    @include on-desktop {
+      padding: 16rem;
+      font-size: 18rem;
+    }
+  }
+
+  &__scroll {
+    padding: 8rem;
+    text-align: center;
+    color: white;
+    background-color: $bluecolor;
+    border-radius: 12rem;
+    font-size: 12rem;
+    font-weight: normal;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+
+    @include on-desktop {
+      padding: 16rem;
+      font-size: 18rem;
+    }
+  }
+}

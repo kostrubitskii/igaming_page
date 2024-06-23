@@ -1,0 +1,14 @@
+@import './blocks/header.scss';
+@import './blocks/about.scss';
+@import './blocks/footer.scss';
+@import './utils/reset.scss';
+
+
+
+html {
+  font-size: calc(100vw / 1440);
+
+  @media screen  and (max-width: 768px){
+    font-size: calc(100vw / 375);
+  }
+};

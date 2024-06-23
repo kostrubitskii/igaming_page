@@ -1,0 +1,67 @@
+@import '../utils/variables.scss';
+@import '../utils/mixins.scss';
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20rem 16rem;
+  background-color: black;
+
+  @include on-desktop {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__title {
+    color: white;
+    font-size: 32rem;
+    margin-bottom: 20rem;
+
+    @include on-desktop {
+      font-size: 48rem;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 14rem;
+    align-items: center;
+  }
+}
+
+.buttons {
+  width: 150rem;
+  padding: 8rem;
+  text-align: center;
+  color: white;
+  background-color: $bluecolor;
+  border-radius: 12rem;
+  font-size: 12rem;
+  font-weight: normal;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+
+  @include on-desktop {
+    font-size: 16rem;
+    width: 300rem;
+  }
+}
+
+.social {
+  display: flex;
+  gap: 24rem;
+
+  &__image {
+    height: 40rem;
+    width: 40rem;
+
+    @include on-desktop {
+      height: 60rem;
+      width: 60rem;
+    }
+  }
+}
+

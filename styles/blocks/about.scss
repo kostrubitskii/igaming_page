@@ -1,0 +1,139 @@
+@import '../utils/mixins.scss';
+@import '../utils/variables.scss';
+
+.about {
+  margin-top: 24rem;
+  padding-inline: 16rem;
+
+  @include on-desktop {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 40rem;
+    padding-inline: 150rem;
+
+  }
+
+  &__info {
+    margin-bottom: 14rem;
+    font-size: 17rem;
+
+    @include on-desktop {
+      margin-bottom: 10rem;
+      font-size: 21rem;
+    }
+  }
+
+  &__provider {
+    margin-bottom: 14rem;
+    color: $bluecolor;
+    font-size: 21rem;
+  }
+
+  &__title {
+    margin-bottom: 14rem;
+    font-size: 28rem;
+
+    @include on-desktop {
+      font-size: 48rem;
+    }
+  }
+
+  &__text {
+
+    @include on-desktop {
+      width: 540rem;
+    }
+  }
+}
+
+.slot {
+
+  @include on-desktop {
+    width: 475rem;
+  }
+
+  &__image {
+    width: 100%;
+    margin-bottom: 24rem;
+  }
+
+  &__info {
+    margin-bottom: 24rem;
+    background-color: #fff;
+  }
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+
+  &__title {
+    font-size: 18rem;
+    color: #6c757d;
+  }
+
+  &__info {
+    padding: 10rem;
+    background-color: #f8f9fa;
+    font-size: 21rem;
+  }
+}
+
+.game {
+  width: 100%;
+  margin: 24rem 0;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 200rem;
+
+    @include on-desktop {
+      height: 792rem;
+    }
+  }
+
+  &__image {
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.start-button {
+  padding: 10rem 20rem;
+  background-color: $bluecolor;
+  color: #fff;
+  border: none;
+  border-radius: 5rem;
+  cursor: pointer;
+  font-size: 18rem;
+}
+
+.game__iframe {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: none;
+}

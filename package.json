@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "start": "parcel ./index.html --open",
+    "build": "parcel build ./index.html --public-url=/dist/"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.12.0",
+    "parcel": "^2.12.0"
+  }
+}
