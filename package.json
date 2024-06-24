@@ -1,7 +1,7 @@
 {
   "scripts": {
     "start": "parcel ./index.html --open",
-    "build": "parcel build ./index.html"
+    "build": "parcel build ./index.html --public-url ./"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.12.0",
