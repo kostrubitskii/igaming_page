@@ -3,7 +3,7 @@
   background-color: #000;
   justify-content: space-between;
   align-items: center;
-  height: 60rem;
+  height: 50rem;
   padding-inline: 16rem;
   display: flex;
 }
@@ -11,6 +11,7 @@
 @media (width >= 1200px) {
   .header {
     gap: 48rem;
+    height: 75rem;
     padding-inline: 32rem;
   }
 }
@@ -23,10 +24,6 @@
 @media (width >= 1200px) {
   .header__title {
     font-size: 32rem;
-  }
-
-  .header {
-    height: 100rem;
   }
 }
 
@@ -67,6 +64,10 @@
   font-size: 12rem;
   font-weight: normal;
   text-decoration: none;
+}
+
+.topBar__scroll:hover {
+  background-color: #008b8b;
 }
 
 @media (width >= 1200px) {
@@ -158,27 +159,34 @@
 .game {
   width: 100%;
   margin: 24rem 0;
+  padding-inline: 16rem;
+}
+
+@media (width >= 1200px) {
+  .game {
+    padding-inline: 150rem;
+  }
 }
 
 .game__container {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 200rem;
+  height: auto;
   display: flex;
   position: relative;
 }
 
 @media (width >= 1200px) {
   .game__container {
-    height: 792rem;
+    height: 100vh;
   }
 }
 
 .game__image {
   object-fit: cover;
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 .overlay {
@@ -202,6 +210,10 @@
   border-radius: 5rem;
   padding: 10rem 20rem;
   font-size: 18rem;
+}
+
+.start-button:hover {
+  background-color: #008b8b;
 }
 
 .game__iframe {
@@ -262,6 +274,10 @@
   text-decoration: none;
 }
 
+.buttons:hover {
+  background-color: #008b8b;
+}
+
 @media (width >= 1200px) {
   .buttons {
     width: 300rem;
@@ -271,6 +287,7 @@
 
 .social {
   gap: 24rem;
+  margin-top: 12rem;
   display: flex;
 }
 

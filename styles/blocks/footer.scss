@@ -44,6 +44,10 @@
   cursor: pointer;
   border: none;
 
+  &:hover {
+    background-color: darkcyan;
+  }
+
   @include on-desktop {
     font-size: 16rem;
     width: 300rem;
@@ -53,6 +57,7 @@
 .social {
   display: flex;
   gap: 24rem;
+  margin-top: 12rem;
 
   &__image {
     height: 40rem;
@@ -64,4 +69,3 @@
     }
   }
 }
-

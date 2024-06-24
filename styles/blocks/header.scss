@@ -5,9 +5,13 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 60rem;
+  height: 50rem;
   background-color: black;
   padding-inline: 16rem;
+
+  @include on-desktop {
+    height: 75rem;
+  }
 
   @include on-desktop {
     padding-inline: 32rem;
@@ -23,9 +27,6 @@
     }
   }
 
-  @include on-desktop {
-    height: 100rem;
-  }
 }
 
 .topBar {
@@ -62,6 +63,10 @@
     text-decoration: none;
     cursor: pointer;
     border: none;
+
+    &:hover {
+      background-color: darkcyan;
+    }
 
     @include on-desktop {
       padding: 16rem;

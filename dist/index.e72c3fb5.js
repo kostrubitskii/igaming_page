@@ -10,9 +10,9 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 document.addEventListener("DOMContentLoaded", function() {
-    const button = document.querySelector(".topBar__scroll");
+    const button = document.querySelectorAll(".topBar__scroll");
     const footer = document.querySelector(".footer");
-    button.addEventListener("click", function() {
+    for (ch of button)ch.addEventListener("click", function() {
         footer.scrollIntoView({
             behavior: "smooth"
         });
